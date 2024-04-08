@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css style-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+          <h2>Multi-Section Form</h2>
+          <form id="multi-section-form">
+            <div class="form-section">
+              <h3>Personal Information</h3>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid Email" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Phone Number:</label>
+                <input type="number" id="psw" name="num" placeholder="Enter your phone number" required>
+              </div>
+              <div class="form-group">
+                <label for="dob">DOB  :</label>
+                <input type="date" id="dob" name="dob" id="dob" required>
+              </div>
+              <div class="">
+                <label for="">Gender :</label><br>
+                <input name="gender" type="radio">
+                <label for="">Male</label><br>
+                <input name="gender" type="radio">
+                <label for="">Female</label><br>
+                <input name="gender" type="radio">
+                <label for="">Other</label><br>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3>Address Information</h3>
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                  <option value="">Select Country</option>
+                  <option value="India">India</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="canada">Canada</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3>Educational Details</h3>
+              <div class="form-group">
+                <label for="country">Select Your highest Degree:</label>
+                <select id="country" name="country" required>
+                  <option value="">Select an option</option>
+                  <option value="sslc">SSLC</option>
+                  <option value="hsc">HSC</option>
+                  <option value="diploma">Diploma</option>
+                  <option value="ug">UG</option>
+                  <option value="pg">PG</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="doc">Upload your Document</label>
+                <input id="doc" type="file">
+              </div>
+            </div>
+            <input type="checkbox">
+            <label for="">I here by declare that all informations entered here is true</label>
+            <br><br>
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
+          </form>
+    </div>
+       
+</body>
+</html>
